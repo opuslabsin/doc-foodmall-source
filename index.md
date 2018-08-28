@@ -1,5 +1,5 @@
 ---
-title: "Grocer Documentation"
+title: "Foodmall Documentation"
 keywords: 
 sidebar: 
 hide_sidebar: true
