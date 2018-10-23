@@ -211,7 +211,8 @@ The app is connected with Woocommerce (WordPress) using REST APIs, the following
       <p align="center"><img src="https://ionicframework.com/img/docs/native/Facebook/2.png"/></p>      
       - Then type in the following command in your Terminal, where `APP_ID` and `APP_NAME` are the values from the Facebook Developer portal.
 
-            ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
+            > ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
+            > npm install --save @ionic-native/facebook
 
       - In config.xml, replace the **YOUR_FACEBOOK_APP_ID** with your **Facebook APP ID** and **YOUR_FACEBOOK_APP_NAME** with your **Facebook App Name** in following code:
       ```xml
@@ -230,7 +231,8 @@ The app is connected with Woocommerce (WordPress) using REST APIs, the following
       **`cordova-plugin-googleplus`**
       - Run the following command to add the support for google login
 
-            ionic cordova plugin add cordova-plugin-googleplus --save --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
+            > ionic cordova plugin add cordova-plugin-googleplus --save --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
+            > npm install --save @ionic-native/google-plus
 
         Your **mywebapplicationclientid** will look something like this **511052243603-tti40jbrr3ukb2t3abebcesl5sd0ql099.apps.googleusercontent.com**. We have already demonstrated above how to get this id.
 
@@ -246,9 +248,13 @@ The app is connected with Woocommerce (WordPress) using REST APIs, the following
       - Added required platforms(Android/iOS) in your Facebook app and debug and releash SHA1 keys
       - Installed `cordova-plugin-googleplus` and `cordova-plugin-facebook4` cordova plugins
 
-            ionic cordova plugin add cordova-plugin-googleplus --save --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
+            > ionic cordova plugin add cordova-plugin-googleplus --save --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
 
-            ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
+            > npm install --save @ionic-native/google-plus
+
+            > ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
+
+            > npm install --save @ionic-native/facebook
 
       **`Useful links`**
       - SHA-1 key related
