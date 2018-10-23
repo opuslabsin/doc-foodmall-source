@@ -281,11 +281,23 @@ The app is connected with Woocommerce (WordPress) using REST APIs, the following
     **`Useful links`**
       - Instructions on how to setup OneSignal for Ionic [https://documentation.onesignal.com/docs/ionic-sdk-setup](https://documentation.onesignal.com/docs/ionic-sdk-setup)
 
-10. ### Other Installations
-    Ionic doesn't bundle all of the tooling required to build an app, it relies on some additional SDKs and software provided by Apple and/or Google. It is good to read and follow the platform guides provided by Ionic to set up for each platorm you wish to work with
-    [Android Platform Guide](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
-    [iOS Platform Guide](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
-    You can do this at a later time, but you'll need to set up the platform tooling before you can preview or emulate an application on a simulator or device.
+10. ### Build App
+    Since the app depends on various native capabilities we suggest you to check the app on physical device instead of checking it in browser.
+    Once you have followed all the steps given above you can build the app for android and ios. But keep in mind that Ionic doesn't bundle all of the tooling required to build an app, it relies on some additional SDKs and software provided by Apple and/or Google. You'll need to set up the platform tooling before you can preview or emulate an application on a simulator or device.
+
+    Once done, you can run following command to run the app on your Android device:
+
+          > ionic cordova run android
+
+    To build the apk, run:
+
+          > ionic cordova build android
+
+    Simillarly for iOS, you can run:
+
+          > ionic cordova build ios
+
+    If you find the given information insufficient for you to successfully build or publish the app on app/play store. Please visit [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/) for indepth documentation.
     
 11. ### PayUMoney:
     - Create an account on [PayUMoney](http://www.payumoney.com)
